@@ -1,0 +1,165 @@
+/* 
+fontFamily: "BROmegaRegular", BROmegaMedium,  BROmegaSemiBold, BROmegaBold
+ */
+
+/* Over right meterial ui css  */
+.details_profile .css-w0yhp4-MuiPaper-root-MuiAccordion-root:before {
+  display: none;
+}
+
+/* ===================== */
+
+.menu-link {
+  color: #23273a;
+  font-family: BR Omega;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.3s;
+  padding: 8px;
+  margin: 0 2px;
+}
+
+.menu-link:hover {
+  color: #fa4a6f;
+}
+
+.primary-btn {
+  color: #fff;
+  font-family: BR Omega !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  letter-spacing: 0.16px !important;
+  border-radius: 5px !important;
+  background: linear-gradient(180deg, #fa4a6f 0%, #532b79 100%);
+  transition: 0.9s !important;
+  /* min-width: 94px; */
+}
+
+.primary-btn:hover {
+  background: linear-gradient(180deg, #532b79 0%, #fa4a6f 100%);
+}
+
+/* 
+.features-area {
+  padding: 80px 0 !important;
+} */
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fa4a6f;
+  font-size: 12px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-dots li {
+  margin: 0 4px;
+}
+
+.testimonial-slider .slick-dots {
+  bottom: -90px;
+}
+
+.success-slider .slick-slider {
+  height: 100%;
+}
+
+.features-area .slick-prev {
+  left: -40px;
+}
+
+.features-area .slick-next {
+  right: -30px;
+}
+
+.features-area .slick-prev svg,
+.features-area .slick-next svg {
+  color: #9c9ea6;
+  font-size: 30px;
+}
+
+.features-area .slick-next svg {
+  color: #fa4a6f;
+}
+
+.features-area .slick-prev:before,
+.features-area .slick-next:before {
+  color: transparent;
+  display: none;
+}
+
+.features-area .slick-initialized .slick-slide {
+  background: #fbfafe;
+}
+
+.stories-slider .slick-initialized .slick-slide {
+  background: #fff;
+}
+
+.stories-slider .slick-dots {
+  bottom: -45px;
+}
+
+.features-area .slick-dots {
+  bottom: -45px;
+}
+
+.login_img {
+  /* background: rgba(255, 255, 255, 0);
+  /* background-image: url(../assets/images/auth/signin_img.png); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 46%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;  */
+}
+
+.css-116unc6-MuiGrid-root input,
+.css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  background: #fff;
+}
+
+.header-area .css-hyum1k-MuiToolbar-root {
+  margin-left: auto;
+}
+
+/* overrite */
+.service-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  border: 5px solid #FFF;
+  box-shadow: -10px 60px 40px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+/* menu  */
+.MuiBox-root.css-bm9kr9 {
+  position: absolute;
+  top: 65px;
+  z-index: 99;
+  width: 100%;
+  background: #ddd;
+  padding: 5px 0 12px;
+}
+
+.MuiBox-root.css-bm9kr9 .MuiBox-root.css-hq1qne {
+  /* margin: 0 15px; */
+  background: transparent;
+}
+
+.MuiBox-root.css-1lp7l8k {
+  position: relative;
+}

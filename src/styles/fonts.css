@@ -1,0 +1,32 @@
+/* styles/fonts.css */
+
+@font-face {
+  font-family: "BROmegaLight";
+  src: url("../assets/fonts/BR-Omega-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BROmegaRegular";
+  src: url("../assets/fonts/BR-Omega-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BROmegaMedium";
+  src: url("../assets/fonts/BR-Omega-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BROmegaSemiBold";
+  src: url("../assets/fonts/BR-Omega-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BROmegaBold";
+  src: url("../assets/fonts/BR-Omega-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
