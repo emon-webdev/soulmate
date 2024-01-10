@@ -1,9 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import Banner from "./Banner";
 
 const Home = () => {
   return (
     <Box className="home-page">
-      <Typography variant="h1">Home page</Typography>
+      <Banner />
     </Box>
   );
 };
