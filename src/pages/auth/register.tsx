@@ -1,27 +1,18 @@
 import SocialMedia from "@/components/SocialMedia";
+import UserForm from "@/components/UserForm";
 import RootLayout from "@/layouts/RootLayout";
-import Visibility from "@mui/icons-material/Visibility";
-import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import {
   Box,
-  Button,
-  Checkbox,
   Container,
-  FormControlLabel,
   Grid,
-  IconButton,
-  InputAdornment,
-  InputLabel,
-  OutlinedInput,
-  TextField,
-  Typography,
+  Typography
 } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactElement, useState } from "react";
-import signin_img from "../../assets/images/auth/signin_img.png";
+import register_img from "../../assets/images/auth/register_img.png";
 import SocialMedial from "./SocialMedial";
-const Login = () => {
+const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -37,7 +28,7 @@ const Login = () => {
       <Container maxWidth="xl">
         <Box
           sx={{
-            p: { xs: "70px 0px 45px", md: "110px 0px 80px" },
+            p: { xs: "70px 0px 50px", md: "120px 0px 80px" },
           }}
         >
           <Typography
@@ -45,19 +36,22 @@ const Login = () => {
             sx={{
               textAlign: "center",
               fontFamily: "BROmegaSemiBold",
-              fontSize: { md: "52px", xs: "40px" },
+              fontSize: { sm: "52px", xs: "35px" },
+              lineHeight: { sm: "58px", xs: "44px" },
+              mb: "15px"
             }}
           >
-            Welcome Back!
+            Create your Account
           </Typography>
           <Typography
             sx={{
               textAlign: "center",
               fontFamily: "BROmegaRegular",
-              fontSize: { md: "18px", xs: "16px" },
+              fontSize: { sm: "18px", xs: "16px" },
+              px: { xs: "50px", sm: "0" }
             }}
           >
-            World number #1 matrimony site
+            Create account and find your mate with us!
           </Typography>
         </Box>
         <Box
@@ -94,7 +88,7 @@ const Login = () => {
                 }}
               >
                 <Image
-                  src={signin_img}
+                  src={register_img}
                   alt="login_img"
                 />
               </Box>
@@ -111,7 +105,6 @@ const Login = () => {
               <Box
                 className="from-content"
                 sx={{
-
                   borderRadius: "4px",
                   width: "100%",
                   padding: { md: "25px 65px 25px", xs: "40px 25px 35px" },
@@ -131,10 +124,8 @@ const Login = () => {
                 >
                   We always love to see you
                 </Typography>
-                <Box component="form"
-                  sx={{
-                    // padding: { md: "25px 65px 25px", xs: "25px 30px 35px" },
-                  }} noValidate autoComplete="on">
+                <UserForm />
+                <Box component="form" sx={{}} noValidate autoComplete="on">
                   <Grid
                     container
                     spacing="20px"
@@ -145,11 +136,11 @@ const Login = () => {
                         fontFamily: "BROmegaRegular",
                       },
                       "& input": {
+                        background: "#fff",
                         fontSize: "14px",
                         color: "#23273A",
                         padding: "8px 14px",
                         fontFamily: "BROmegaRegular",
-                        background: "#fff",
                       },
                       "& p": {
                         fontSize: "12px",
@@ -157,103 +148,15 @@ const Login = () => {
                         ml: "0",
                         fontFamily: "BROmegaRegular",
                       },
+                      "& .css-116unc6-MuiGrid-root input": {
+                        background: "#fff",
+                      },
+                      "& .css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input":
+                      {
+                        background: "#fff",
+                      },
                     }}
                   >
-                    <Grid item xs={12}>
-                      <InputLabel htmlFor="inputFirstName">
-                        Email/Phone
-                      </InputLabel>
-                      <TextField
-                        fullWidth
-                        id="outlined-basic"
-                        size="small"
-                        variant="outlined"
-                        helperText="*Use Email Address"
-                        placeholder="kenzi.lawson@example.com"
-                        sx={{ marginTop: "6px" }}
-                      />
-                    </Grid>
-                    <Grid
-                      item
-                      xs={12}
-                      sx={{
-                        mt: "10px",
-                      }}
-                    >
-                      <InputLabel htmlFor="inputFirstName">
-                        Your Password*
-                      </InputLabel>
-                      <OutlinedInput
-                        fullWidth
-                        id="outlined-adornment-password"
-                        sx={{ marginTop: "6px" }}
-                        placeholder="********"
-                        type={showPassword ? "text" : "password"}
-                        endAdornment={
-                          <InputAdornment position="end">
-                            <IconButton
-                              aria-label="toggle password visibility"
-                              onClick={handleClickShowPassword}
-                              onMouseDown={handleMouseDownPassword}
-                              edge="end"
-                            >
-                              {showPassword ? <VisibilityOff /> : <Visibility />}
-                            </IconButton>
-                          </InputAdornment>
-                        }
-                      />
-                    </Grid>
-
-                    <Grid item xs={12}>
-                      <Grid
-                        container
-                        direction="row"
-                        justifyContent="space-between"
-                        alignItems="center"
-                        px="20px"
-                      >
-                        <Grid item xs={6}>
-                          <FormControlLabel
-                            sx={{
-                              color: "#7B7D89",
-                              fontFamily: "BROmegaRegular",
-                              "& .css-ahj2mt-MuiTypography-root": {
-                                fontSize: "12px",
-                              },
-                            }}
-                            control={
-                              <Checkbox
-                                defaultChecked
-                                size="small"
-                                sx={{
-                                  py: "0",
-                                }}
-                              />
-                            }
-                            label="Remember me"
-                          />
-                        </Grid>
-                        <Grid item xs={6}>
-                          <Typography
-                            sx={{
-                              color: "#7B7D89",
-                              fontSize: "14px",
-                              fontFamily: "BROmegaRegular",
-                              textAlign: "end",
-                              "& a": {
-                                color: "#EC3384",
-                                textDecoration: "underline",
-                              },
-                            }}
-                          >
-                            <Link href="/auth/forgot-password">
-                              Forget Password?
-                            </Link>
-                          </Typography>
-                        </Grid>
-                      </Grid>
-                    </Grid>
-                    {/* button */}
                     <Grid
                       item
                       xs={12}
@@ -263,19 +166,6 @@ const Login = () => {
                         },
                       }}
                     >
-                      <Button
-                        className="primary-btn"
-                        fullWidth
-                        sx={{
-                          p: "14.60px 12px",
-                          color: "#fff",
-                          letterSpacing: "0.18px",
-                          fontSize: "18px",
-                          my: "12px",
-                        }}
-                      >
-                        Login Now
-                      </Button>
                       <Typography
                         sx={{
                           textAlign: "center",
@@ -283,7 +173,7 @@ const Login = () => {
                           color: "#7B7D89",
                         }}
                       >
-                        Or Login with
+                        Or Join with
                       </Typography>
                     </Grid>
                     {/* social media */}
@@ -319,8 +209,8 @@ const Login = () => {
                         }}
                       >
                         <Typography>
-                          Don`t have an account?
-                          <Link href="/auth/register">Create Account</Link>
+                          I have an account?
+                          <Link href="/auth/login">Login</Link>
                         </Typography>
                       </Box>
                     </Grid>
@@ -335,8 +225,8 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
 
-Login.getLayout = function getLayout(page: ReactElement) {
+Register.getLayout = function getLayout(page: ReactElement) {
   return <RootLayout>{page}</RootLayout>;
 };
