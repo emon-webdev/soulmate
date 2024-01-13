@@ -669,8 +669,8 @@ const Membership = () => {
             </Box>
           </Box>
         </Box>
-      </Container >
-    </Box >
+      </Container>
+    </Box>
   );
 };
 

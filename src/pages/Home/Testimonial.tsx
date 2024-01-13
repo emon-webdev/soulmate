@@ -57,7 +57,7 @@ const Testimonial = () => {
             fontFamily: "BROmegaSemiBold",
             px: { md: "0", xs: "45px" },
             fontSize: { md: "52px", xs: "38px" },
-            lineHeight: { md: "58px", xs: "44px" }
+            lineHeight: { md: "58px", xs: "44px" },
           }}
         >
           What our members say
