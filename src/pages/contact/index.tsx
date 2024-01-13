@@ -149,7 +149,7 @@ const Contact = () => {
                     mt: "12px",
                     "& a": {
                       color: "#23273A",
-                      wordWrap: "break-word"
+                      wordWrap: "break-word",
                     },
                   }}
                 >
@@ -201,17 +201,18 @@ const Contact = () => {
               </Box>
             </Box>
           </Grid>
-          <Grid
-            item
-            sm={8}
-          >
+          <Grid item sm={8}>
             <Box
               sx={{
                 maxWidth: "760px",
                 width: "100%",
                 ml: "auto",
                 background: "#EEFEFF",
-                p: { md: "85px 65px 90px", lg: "85px 90px 90px", xs: "60px 30px 65px" },
+                p: {
+                  md: "85px 65px 90px",
+                  lg: "85px 90px 90px",
+                  xs: "60px 30px 65px",
+                },
                 borderRadius: "30px",
               }}
             >
