@@ -1,4 +1,4 @@
-# Project Name : SOULMATE (Precise Matrimonial Website)
+# Project Name: SOULMATE (Matrimonial Website)
 
 # Live Website
 
