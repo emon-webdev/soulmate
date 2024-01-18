@@ -58,7 +58,7 @@ const ActiveMembers = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                textAlign: "end"
+                textAlign: "end",
               }}
             >
               Show Result:{" "}
@@ -124,7 +124,6 @@ const ActiveMembers = () => {
                         <Grid
                           item
                           xs
-
                           container
                           direction="column"
                           justifyContent="center"
@@ -213,11 +212,7 @@ const ActiveMembers = () => {
                           </Grid>
                         </Grid>
                       </Grid>
-                      <Grid
-                        item
-                        xs={3}
-                        sm
-                      >
+                      <Grid item xs={3} sm>
                         <Box
                           sx={{
                             width: "60px",
@@ -448,9 +443,9 @@ const ActiveMembers = () => {
               </Box>
             </Grid>
           </Box>
-        </Box >
-      </Container >
-    </Box >
+        </Box>
+      </Container>
+    </Box>
   );
 };
 
