@@ -15,6 +15,7 @@
     "@mui/lab": "^5.0.0-alpha.160",
     "@mui/material": "^5.15.4",
     "@reduxjs/toolkit": "^2.0.1",
+    "date-fns": "^3.3.1",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
     "react": "^18",

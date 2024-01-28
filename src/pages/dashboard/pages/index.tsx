@@ -1,22 +1,31 @@
-import SocialMedia from "@/components/SocialMedia";
 import DashboardLayout from "@/layouts/DashboardLayout";
-import CheckIcon from '@mui/icons-material/Check';
-import CollectionsIcon from '@mui/icons-material/Collections';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import { Box, Button, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
-import Image from 'next/image';
+import CheckIcon from "@mui/icons-material/Check";
+import CollectionsIcon from "@mui/icons-material/Collections";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import {
+  Box,
+  Button,
+  Grid,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Typography,
+} from "@mui/material";
+import Image from "next/image";
 import { ReactElement } from "react";
-import dimond from '../../../assets/images/logo/dimond.png';
-import match_profile from '../../../assets/images/similar_profile.png';
+import dimond from "../../../assets/images/logo/dimond.png";
+import match_profile from "../../../assets/images/similar_profile.png";
 
 const Dashboard = () => {
   return (
     <Box>
-      <SocialMedia />
+      {/* <SocialMedia /> */}
       <Box
         sx={{
-          mb: "40px"
+          mb: "40px",
         }}
       >
         <Grid container spacing={2}>
@@ -52,25 +61,20 @@ const Dashboard = () => {
                 "&:hover": {
                   background: "#FA4A6F",
                   "& h2": {
-                    color: "#fff"
+                    color: "#fff",
                   },
                   "& p": {
-                    color: "#fff"
+                    color: "#fff",
                   },
                   "& svg": {
-                    color: "#fff"
+                    color: "#fff",
                   },
-                }
+                },
               }}
             >
               <FavoriteBorderIcon />
-              <Typography variant="h2">
-                3400
-              </Typography>
-              <Typography>
-                Remaining
-                Interest
-              </Typography>
+              <Typography variant="h2">3400</Typography>
+              <Typography>Remaining Interest</Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
@@ -105,26 +109,20 @@ const Dashboard = () => {
                 "&:hover": {
                   background: "#FA4A6F",
                   "& h2": {
-                    color: "#fff"
+                    color: "#fff",
                   },
                   "& p": {
-                    color: "#fff"
+                    color: "#fff",
                   },
                   "& svg": {
-                    color: "#fff"
+                    color: "#fff",
                   },
-                }
+                },
               }}
             >
-
               <LocalPhoneIcon />
-              <Typography variant="h2">
-                3400
-              </Typography>
-              <Typography>
-                Remaining
-                Contact View
-              </Typography>
+              <Typography variant="h2">3400</Typography>
+              <Typography>Remaining Contact View</Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
@@ -159,26 +157,20 @@ const Dashboard = () => {
                 "&:hover": {
                   background: "#FA4A6F",
                   "& h2": {
-                    color: "#fff"
+                    color: "#fff",
                   },
                   "& p": {
-                    color: "#fff"
+                    color: "#fff",
                   },
                   "& svg": {
-                    color: "#fff"
+                    color: "#fff",
                   },
-                }
+                },
               }}
             >
-
               <CollectionsIcon />
-              <Typography variant="h2">
-                3400
-              </Typography>
-              <Typography>
-                Remaining Gallery
-                Image Upload
-              </Typography>
+              <Typography variant="h2">3400</Typography>
+              <Typography>Remaining Gallery Image Upload</Typography>
             </Box>
           </Grid>
         </Grid>
@@ -204,7 +196,7 @@ const Dashboard = () => {
                   color: "#020203",
                   pb: "14px",
                   fontFamily: "BROmegaSemiBold",
-                  borderBottom: "1px solid #D6D6D6"
+                  borderBottom: "1px solid #D6D6D6",
                 },
                 "& h2": {
                   fontSize: "32px",
@@ -220,37 +212,26 @@ const Dashboard = () => {
                 },
               }}
             >
-              <Typography variant="h3"
-              >
-                Current package
-              </Typography>
+              <Typography variant="h3">Current package</Typography>
               <Box>
                 <Box
                   sx={{
                     textAlign: "center",
                     py: "40px",
-                    "& img": {
-
-                    },
+                    "& img": {},
                     "& h2": {
                       color: "#020203",
-                      fontFamily: "BROmegaMedium"
+                      fontFamily: "BROmegaMedium",
                     },
                   }}
                 >
-                  <Image
-                    width={110}
-                    src={dimond}
-                    alt="professional package"
-                  />
-                  <Typography variant="h2">
-                    Professional Package
-                  </Typography>
+                  <Image width={110} src={dimond} alt="professional package" />
+                  <Typography variant="h2">Professional Package</Typography>
                 </Box>
 
                 <Box
                   sx={{
-                    mb: "20px"
+                    mb: "20px",
                   }}
                 >
                   <List disablePadding>
@@ -268,7 +249,7 @@ const Dashboard = () => {
                             minWidth: "30px",
                             "& svg": {
                               fontSize: "16px",
-                              color: "#0EB7BE"
+                              color: "#0EB7BE",
                             },
                           }}
                         >
@@ -278,7 +259,7 @@ const Dashboard = () => {
                           sx={{
                             color: "#23273A",
                             m: "0",
-                            fontFamily: "BROmegaRegular"
+                            fontFamily: "BROmegaRegular",
                           }}
                           primary="1000 Express Interests"
                         />
@@ -298,7 +279,7 @@ const Dashboard = () => {
                             minWidth: "30px",
                             "& svg": {
                               fontSize: "16px",
-                              color: "#0EB7BE"
+                              color: "#0EB7BE",
                             },
                           }}
                         >
@@ -308,7 +289,7 @@ const Dashboard = () => {
                           sx={{
                             color: "#23273A",
                             m: "0",
-                            fontFamily: "BROmegaRegular"
+                            fontFamily: "BROmegaRegular",
                           }}
                           primary="1000 Gallery Photo Upload"
                         />
@@ -328,7 +309,7 @@ const Dashboard = () => {
                             minWidth: "30px",
                             "& svg": {
                               fontSize: "16px",
-                              color: "#0EB7BE"
+                              color: "#0EB7BE",
                             },
                           }}
                         >
@@ -338,7 +319,7 @@ const Dashboard = () => {
                           sx={{
                             color: "#23273A",
                             m: "0",
-                            fontFamily: "BROmegaRegular"
+                            fontFamily: "BROmegaRegular",
                           }}
                           primary="1000 Contact Info View"
                         />
@@ -358,7 +339,7 @@ const Dashboard = () => {
                             minWidth: "30px",
                             "& svg": {
                               fontSize: "16px",
-                              color: "#0EB7BE"
+                              color: "#0EB7BE",
                             },
                           }}
                         >
@@ -368,7 +349,7 @@ const Dashboard = () => {
                           sx={{
                             color: "#23273A",
                             m: "0",
-                            fontFamily: "BROmegaRegular"
+                            fontFamily: "BROmegaRegular",
                           }}
                           primary="Show Auto Profile Match"
                         />
@@ -385,7 +366,7 @@ const Dashboard = () => {
                     color: "#020203",
                     fontSize: "22px",
                     fontFamily: "BROmegaMedium",
-                    mb: "15px"
+                    mb: "15px",
                   },
                   "& button": {
                     borderRadius: "5px",
@@ -396,17 +377,13 @@ const Dashboard = () => {
                     fontSize: "15px",
                     p: "9px 15px",
                     "&:hover": {
-                      background: "#FA4A6F"
-                    }
-                  }
+                      background: "#FA4A6F",
+                    },
+                  },
                 }}
               >
-                <Typography>
-                  Package expiry date: 2025-08-14
-                </Typography>
-                <Button>
-                  Upgrade Package
-                </Button>
+                <Typography>Package expiry date: 2025-08-14</Typography>
+                <Button>Upgrade Package</Button>
               </Box>
             </Box>
           </Grid>
@@ -429,7 +406,7 @@ const Dashboard = () => {
                   color: "#020203",
                   pb: "14px",
                   fontFamily: "BROmegaSemiBold",
-                  borderBottom: "1px solid #D6D6D6"
+                  borderBottom: "1px solid #D6D6D6",
                 },
                 "& h2": {
                   fontSize: "32px",
@@ -445,26 +422,21 @@ const Dashboard = () => {
                 },
               }}
             >
-              <Typography variant="h3"
-              >
-                Matched profile
-              </Typography>
+              <Typography variant="h3">Matched profile</Typography>
               <Box>
                 <Box
                   sx={{
                     textAlign: "center",
                     py: "40px",
-                    "& img": {
-
-                    },
+                    "& img": {},
                     "& h2": {
                       color: "#020203",
                       fontSize: "18px",
-                      fontFamily: "BROmegaSemiBold"
+                      fontFamily: "BROmegaSemiBold",
                     },
                     "& p": {
                       color: "#23273A",
-                      fontFamily: "BROmegaRegular"
+                      fontFamily: "BROmegaRegular",
                     },
                   }}
                 >
@@ -473,9 +445,7 @@ const Dashboard = () => {
                     src={match_profile}
                     alt="professional package"
                   />
-                  <Typography variant="h2">
-                    Leslie Alexander
-                  </Typography>
+                  <Typography variant="h2">Leslie Alexander</Typography>
                   <Typography>
                     4517 Washington Ave. Manchester, Kentucky 39495
                   </Typography>
@@ -485,13 +455,11 @@ const Dashboard = () => {
           </Grid>
         </Grid>
       </Box>
-    </Box >
+    </Box>
   );
 };
 
 export default Dashboard;
 Dashboard.getLayout = function getLayout(page: ReactElement) {
-  return (
-    <DashboardLayout>{page}</DashboardLayout>
-  );
+  return <DashboardLayout>{page}</DashboardLayout>;
 };
