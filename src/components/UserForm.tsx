@@ -1,3 +1,4 @@
+"use client";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import {
@@ -15,6 +16,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
+
 const UserForm = () => {
   const [gender, setGender] = useState("Male");
   const [profileType, setProfileType] = useState("Groom");
