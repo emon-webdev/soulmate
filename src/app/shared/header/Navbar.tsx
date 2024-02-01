@@ -17,7 +17,7 @@ import { HeaderProps } from "./header";
 const Navbar = ({ handleDrawerToggle, sidebarOpen }: HeaderProps) => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const isDashboardRoute = pathname.startsWith("/dashboard/");
+  const isDashboardRoute = pathname.startsWith("/dashboard");
   console.log("isDashboardRoute", isDashboardRoute);
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -339,7 +339,7 @@ const Navbar = ({ handleDrawerToggle, sidebarOpen }: HeaderProps) => {
                 href="/auth/login"
                 className="primary-btn"
                 style={{
-                  color: "#23273A !important",
+                  color: "#23273A",
                   padding: "9px 16px",
                   background: "transparent",
                 }}
@@ -348,7 +348,7 @@ const Navbar = ({ handleDrawerToggle, sidebarOpen }: HeaderProps) => {
               </Link>
               <Link
                 href="/auth/register"
-                className="primary-btn"
+                className="primary-btn register-btn"
                 style={{
                   padding: "9px 16px",
                   color: "#23273A",
@@ -379,7 +379,7 @@ const Navbar = ({ handleDrawerToggle, sidebarOpen }: HeaderProps) => {
             </Link>
             <Link
               href="/auth/register"
-              className="primary-btn"
+              className="primary-btn register-btn"
               style={{
                 padding: "9px 16px",
                 marginLeft: "16px",

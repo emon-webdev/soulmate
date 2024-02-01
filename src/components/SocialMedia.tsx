@@ -11,7 +11,12 @@ import Link from "next/link";
 
 const SocialMedia = () => {
   return (
-    <Box className="social-icons" sx={{}}>
+    <Box
+      className="social-icons"
+      sx={{
+        display: { sm: "block", xs: "none" },
+      }}
+    >
       <Box
         sx={{
           position: "fixed",

@@ -25,7 +25,7 @@ fontFamily: "BROmegaRegular", BROmegaMedium,  BROmegaSemiBold, BROmegaBold
 }
 
 .primary-btn {
-  color: #fff;
+  color: #fff !important;
   font-family: BR Omega !important;
   font-size: 16px !important;
   font-style: normal;
@@ -37,7 +37,22 @@ fontFamily: "BROmegaRegular", BROmegaMedium,  BROmegaSemiBold, BROmegaBold
   transition: 0.9s !important;
   /* min-width: 94px; */
 }
-
+.MuiBox-root.css-bm9kr9,
+.MuiBox-root.mui-bm9kr9 {
+  position: absolute;
+  top: 65px;
+  z-index: 99;
+  width: 100%;
+  background: #fff6fa;
+  padding: 5px 0 12px;
+}
+.main-navbar .primary-btn {
+  color: #23273a !important;
+}
+.main-navbar .register-btn {
+  color: #fff !important;
+}
+/* MuiBox-root mui-nhhs81 */
 .primary-btn:hover {
   background: linear-gradient(180deg, #532b79 0%, #fa4a6f 100%);
 }
@@ -46,7 +61,9 @@ fontFamily: "BROmegaRegular", BROmegaMedium,  BROmegaSemiBold, BROmegaBold
 .features-area {
   padding: 80px 0 !important;
 } */
-
+.banner-content p {
+  font-family: "BROmegaSemiBold" !important;
+}
 .slick-dots li.slick-active button:before {
   opacity: 1;
   color: #fa4a6f;
@@ -140,10 +157,9 @@ fontFamily: "BROmegaRegular", BROmegaMedium,  BROmegaSemiBold, BROmegaBold
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  border: 5px solid #FFF;
-  box-shadow: -10px 60px 40px 0px rgba(0, 0, 0, 0.10);
+  border: 5px solid #fff;
+  box-shadow: -10px 60px 40px 0px rgba(0, 0, 0, 0.1);
 }
-
 
 /* menu  */
 .MuiBox-root.css-bm9kr9 {

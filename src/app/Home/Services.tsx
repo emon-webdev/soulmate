@@ -10,9 +10,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/effect-cards";
 
-// import './styles.css';
-
+import "../../styles/swiper.css";
 // import required modules
 import { EffectCards } from "swiper/modules";
 const Services = () => {
@@ -35,6 +35,7 @@ const Services = () => {
           Lorem dolor amet consectetur adipiscing. Commode acceptor bandit
           torpor meanness egoists mathis. ucibus laces ultrices acned seed.
         </Typography>
+
         <Box
           sx={{
             display: { md: "flex" },

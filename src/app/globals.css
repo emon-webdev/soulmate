@@ -1,5 +1,63 @@
+:root {
+  --max-width: 1280px;
+  --border-radius: 12px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0;
+}
+
+body {
+  font-family: "BROmegaRegular", sans-serif !important;
+  font-weight: normal;
+  font-style: normal;
+  box-sizing: border-box;
+}
+p {
+  font-family: "BR-Omega-Regular", sans-serif !important;
+}
+span {
+  font-family: "BR-Omega-Regular", sans-serif !important;
+}
+h2,
+h3,
+h4,
+h5,
+h5,
+h1 {
+  font-family: "BROmegaBold", sans-serif !important;
+}
+.MuiContainer-maxWidthXl {
+  max-width: 1280px !important;
+  padding: 0 15px !important;
+}
+.css-19r6kue-MuiContainer-root {
+  max-width: 1280px !important;
+  padding: 0 15px !important;
+}
+
+.css-1ekb41w {
+  max-width: 1280px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slick-list {
+  margin: 0 8px;
+}
+
+.slick-slide {
+  padding: 0 8px;
 }

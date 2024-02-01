@@ -29,6 +29,7 @@ const IgnoredList = () => {
       <SocialMedia />
       <Box>
         <Typography
+          variant="h4"
           sx={{
             color: "#020203",
             pb: "20px",

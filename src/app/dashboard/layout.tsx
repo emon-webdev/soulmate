@@ -1,7 +1,6 @@
 "use client";
 import { Box, Container, Drawer } from "@mui/material";
 import React from "react";
-import Header from "../shared/header/header";
 import DashboardNav from "./components/DashboardNav";
 
 const DashboardLayout = ({
@@ -16,10 +15,10 @@ const DashboardLayout = ({
   return (
     <Box>
       {/* header navbar */}
-      <Header
+      {/* <Header
         handleDrawerToggle={handleDrawerToggle}
         sidebarOpen={sidebarOpen}
-      />
+      /> */}
       <Box sx={{ pt: "60px", pb: "160px" }}>
         <Container maxWidth="xl">
           <Box

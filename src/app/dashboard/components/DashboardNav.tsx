@@ -1,10 +1,10 @@
-"use client";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import DoDisturbIcon from "@mui/icons-material/DoDisturb";
 import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Person4Icon from "@mui/icons-material/Person4";
 import ViewListIcon from "@mui/icons-material/ViewList";
 import {
@@ -112,6 +112,14 @@ const DashboardNav = () => {
                 <Person4Icon />
               </ListItemIcon>
               <ListItemText>My Profile</ListItemText>
+            </MenuItem>
+          </Link>
+          <Link href="/dashboard/message">
+            <MenuItem>
+              <ListItemIcon>
+                <MailOutlineIcon />
+              </ListItemIcon>
+              <ListItemText>Message</ListItemText>
             </MenuItem>
           </Link>
           <Link href="/dashboard/gallery">
