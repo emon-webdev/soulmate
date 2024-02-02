@@ -1,7 +1,11 @@
+import Image from "next/image";
+import logo from "../assets/images/logo/main_logo.png";
 const loading = () => {
   return (
-    <div>
-      <h2>Loading...</h2>
+    <div className="main">
+      <div id="heart" className="heart">
+        <Image src={logo} alt="logo" />
+      </div>
     </div>
   );
 };

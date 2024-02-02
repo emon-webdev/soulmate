@@ -7,6 +7,25 @@ fontFamily: "BROmegaRegular", BROmegaMedium,  BROmegaSemiBold, BROmegaBold
   display: none;
 }
 
+/* Heart beat animation */
+@keyframes beat {
+  to {
+    transform: scale(1.2);
+  }
+}
+.main #heart {
+  overflow: hidden;
+  text-align: center;
+  height: calc(100vh - 480px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main #heart img {
+  animation: beat 0.5s infinite alternate;
+  transform-origin: center;
+}
+
 /* ===================== */
 
 .menu-link {
@@ -37,6 +56,9 @@ fontFamily: "BROmegaRegular", BROmegaMedium,  BROmegaSemiBold, BROmegaBold
   transition: 0.9s !important;
   /* min-width: 94px; */
 }
+/* spinner */
+
+/* theme css */
 .MuiBox-root.css-bm9kr9,
 .MuiBox-root.mui-bm9kr9 {
   position: absolute;

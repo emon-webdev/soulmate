@@ -1,4 +1,3 @@
-import RootLayout from "@/layouts/RootLayout";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import {
   Box,
@@ -11,8 +10,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { ReactElement } from "react";
-import reset from "../../assets/images/auth/reset.png";
+import reset from "../../../assets/images/auth/reset.png";
 const ForgotPassword = () => {
   return (
     <Box className="login-area" sx={{ mb: "120px" }}>
@@ -153,6 +151,3 @@ const ForgotPassword = () => {
 };
 
 export default ForgotPassword;
-ForgotPassword.getLayout = function getLayout(page: ReactElement) {
-  return <RootLayout>{page}</RootLayout>;
-};

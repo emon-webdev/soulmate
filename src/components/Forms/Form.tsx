@@ -14,7 +14,7 @@ const Form = ({ children, submitHandler, defaultValues }: FormProps) => {
   const fromConfig: FromConfig = {};
   if (!!defaultValues) fromConfig["defaultValues"] = defaultValues;
 
-  const { methods } = useForm<FormProps>(fromConfig);
+  const { methods }: any = useForm<FormProps>(fromConfig);
   const { handleSubmit, reset } = methods;
   console.log(methods);
 

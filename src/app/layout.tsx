@@ -68,10 +68,11 @@ function localFont({ src }: { src: string }) {
   // You need to implement this function to load and apply the font
   // Return an object with the necessary properties, including className
   // For now, let's assume it's just applying the font directly to the body
-  document.body.style.fontFamily = `"BR-Omega-Regular", sans-serif`;
-
+  if (typeof window !== "undefined") {
+    document.body.style.fontFamily = `BR-Omega-Regular, sans-serif`;
+  }
   return {
-    fontFamily: `"BR-Omega-Regular", sans-serif`,
+    fontFamily: `BR-Omega-Regular, sans-serif`,
     className: "your-font-class-name",
   };
 }
