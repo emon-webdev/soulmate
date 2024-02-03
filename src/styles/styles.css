@@ -10,19 +10,20 @@ fontFamily: "BROmegaRegular", BROmegaMedium,  BROmegaSemiBold, BROmegaBold
 /* Heart beat animation */
 @keyframes beat {
   to {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 }
 .main #heart {
   overflow: hidden;
   text-align: center;
   height: calc(100vh - 480px);
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .main #heart img {
-  animation: beat 0.5s infinite alternate;
+  animation: beat 0.3s infinite alternate;
   transform-origin: center;
 }
 
